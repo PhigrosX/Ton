@@ -20,7 +20,7 @@ import { prepareTactDeployment } from "@tact-lang/deployer";
     // Prepareing
     console.log("Uploading package...");
     let prepare = await prepareTactDeployment({ pkg, data, testnet });
-    //
+    
     // Deploying
     console.log("============================================================================================");
     console.log("Contract Address");
