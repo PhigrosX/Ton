@@ -3,12 +3,13 @@ import * as path from "path";
 import { Address, contractAddress } from "@ton/core";
 import { SampleTactContract } from "./output/sample_SampleTactContract";
 import { prepareTactDeployment } from "@tact-lang/deployer";
-
+//contract address: kQCQzdhXT4acEvh-PxyAbQ9AMoY3UdNPW5H6uOzzI9CgwH7Q
+//tonviewer:https://tonviewer.com/EQCQzdhXT4acEvh-PxyAbQ9AMoY3UdNPW5H6uOzzI9CgwMVa
 (async () => {
     // Parameters
     let testnet = true;
     let packageName = "sample_SampleTactContract.pkg";
-    let owner = Address.parse("0QD8d5vx-7hiviuMMCU_xXHyg9PToCHgQB1MwcTkgG7dIbkt");
+    let owner = Address.parse("0QDtMtsBYKmyATrVCsc6159plfZTQ439cRmv2eap8bpGC2UD");
     let init = await SampleTactContract.init(owner);
 
     // Load required data
@@ -35,3 +36,5 @@ import { prepareTactDeployment } from "@tact-lang/deployer";
     console.log();
     console.log("============================================================================================");
 })();
+
+//0QDtMtsBYKmyATrVCsc6159plfZTQ439cRmv2eap8bpGC2UD

@@ -1,3 +1,5 @@
+ode_modules\\@tact-lang\\compiler\\stdlib\\stdlib.fc` `D:\\Dapp\\ton\\T1\\tact-template\
+ode_modules\\@tact-lang\\compiler\\stdlib\\stdlib_ex.fc` `D:/Dapp/ton/T1/tact-template/sources/output/sample_SampleTactContract.code.fc` incl:`D:/Dapp/ton/T1/tact-template/sources/output/sample_SampleTactContract.headers.fc` incl:`D:/Dapp/ton/T1/tact-template/sources/output/sample_SampleTactContract.stdlib.fc` incl:`D:/Dapp/ton/T1/tact-template/sources/output/sample_SampleTactContract.constants.fc` incl:`D:/Dapp/ton/T1/tact-template/sources/output/sample_SampleTactContract.storage.fc` 
 PROGRAM{
   DECLPROC __tact_verify_address
   DECLPROC __tact_load_address
