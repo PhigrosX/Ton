@@ -38,3 +38,5 @@ import { prepareTactDeployment } from "@tact-lang/deployer";
 })();
 
 //0QDtMtsBYKmyATrVCsc6159plfZTQ439cRmv2eap8bpGC2UD
+//kQDeJj0GAUbEsSSVZk9OsIVb4_qxY4Eob8EmIs1sPDhrGQy6
+//kQDz_xASwcIWhlC3bZ0JURom3_K2jCo2qejbC--wt7i363LL

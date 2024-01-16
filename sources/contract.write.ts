@@ -2,7 +2,7 @@ import { Address, contractAddress, toNano } from "@ton/core";
 import { TonClient4, WalletContractV4 } from "@ton/ton";
 import { SampleTactContract } from "./output/sample_SampleTactContract";
 import { mnemonicToPrivateKey } from "@ton/crypto";
-
+import { Multiply } from "./output/sample_SampleTactContract";
 const Sleep = (ms: number)=> {
     return new Promise(resolve=>setTimeout(resolve, ms))
 }
@@ -29,8 +29,22 @@ const Sleep = (ms: number)=> {
     let contract_open = await client.open(contract);
 
     // send message to contract
-    await contract_open.send(walletSender, { value: toNano(1) }, "increment");
+    //await contract_open.send(walletSender, { value: toNano(2) }, "increment");
+    await Sleep(3000);
+    console.log("Counter Value: " + (await contract_open.getCounter()));
     
+    //decrease
+    //await contract_open.send(walletSender, { value: toNano(3) }, "decrease");
+    await Sleep(3000);
+    console.log("Counter Value: " + (await contract_open.getCounter()));
+    
+    //multiply
+    //await contract_open.send(walletSender, { value: toNano(2) }, "multiply");
+    await Sleep(3000);
+    console.log("Counter Value: " + (await contract_open.getCounter()));
+
+    //devide
+    await contract_open.send(walletSender, { value: toNano(2) }, "devide");
     await Sleep(3000);
     console.log("Counter Value: " + (await contract_open.getCounter()));
 })();
